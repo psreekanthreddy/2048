@@ -164,19 +164,19 @@ def row1(a,b,c,d):
                 if lst1[i].cget('text') == '' and lst1[i + 1].cget('text') == '' and lst1[i + 2].cget('text') == '':
                     lst1[i].config(text=lst1[i + 3].cget('text'))
                     lst1[i + 3].config(text='')
-                    row1(a,b,c,d)
+                   
                     continue
 
                 if lst1[i].cget('text') == '' and lst1[i + 1].cget('text') == '':
                     lst1[i].config(text=lst1[i + 2].cget('text'))
                     lst1[i + 2].config(text='')
-                    row1(a,b,c,d)
+                   
                     continue
 
                 if lst1[i].cget('text') == '':
                     lst1[i].config(text=lst1[i + 1].cget('text'))
                     lst1[i + 1].config(text='')
-                    row1(a,b,c,d)
+                   
                     continue
 
                 if lst1[i].cget('text') == lst1[i + 1].cget('text'):
@@ -189,14 +189,14 @@ def row1(a,b,c,d):
                     lst1[i].config(text=lst1[i].cget('text') + lst1[i + 2].cget('text'))
                     lst1[i + 1].config(text='')
                     lst1[i + 2].config(text='')
-                    row1(a,b,c,d)
+                   
                     continue
                 if lst1[i + 1].cget('text') == '' and lst1[i + 1].cget('text') == '' and lst1[i].cget('text') == lst1[i + 3].cget('text'):
                     lst1[i].config(text=lst1[i].cget('text') + lst1[i + 3].cget('text'))
                     lst1[i + 1].config(text='')
                     lst1[i + 2].config(text='')
                     lst1[i + 3].config(text='')
-                    row1(a,b,c,d)
+                   
                     continue
                
             except:
@@ -254,6 +254,5 @@ dButton.grid(row=9,column=3)
 root.mainloop()
 
 
-def s():
-    p
+
 
